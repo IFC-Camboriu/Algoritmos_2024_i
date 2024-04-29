@@ -16,5 +16,8 @@ if (frequencia >= 75 and frequencia <= 100) and nota < 3.0:
     print("O aluno foi reprovado por ter uma nota menor que 3.0")
 if (frequencia >= 75 and frequencia <= 100) and (nota >= 3.0 and nota < 7.0):
     print("O aluno ficou em exame por ter uma nota menor que 7.0")
-if (frequencia >= 75 and frequencia <= 100) and (nota >= 7.0):
+if (frequencia >= 75 and frequencia <= 100) and (nota >= 7.0 and nota <= 10.0):
     print("O aluno foi aprovado")
+
+if(frequencia > 100 or nota > 10.0):
+    print("Informe valores válidos de entrada")

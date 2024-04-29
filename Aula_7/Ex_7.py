@@ -4,9 +4,9 @@
 
 velocidade = int(input("Informe a velocidade atingida pelo carro do usuário: "))
 limite = 80
-multa = 5 * (velocidade - limite)
 
 if velocidade > limite:
+    multa = 5 * (velocidade - limite)
     print(f"Por atingir {velocidade} km/h, o usuário foi multado no valor de R$ {multa}")
 else:
     print("O usuário não foi multado, pois não ultrapassou o limite de velocidade")

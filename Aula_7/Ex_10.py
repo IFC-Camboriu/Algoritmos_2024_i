@@ -9,13 +9,15 @@
 
 idade = int(input("Informe a idade do nadador: "))
 
-if idade >= 5 and idade <=7:
-    print(f"Com {idade} anos, O nadador pertence à categoria Infantil A")
-if idade >= 8 and idade <= 10:
-    print(f"Com {idade} anos, O nadador pertence à categoria Infantil B")
-if idade >= 11 and idade <= 13:
-    print(f"Com {idade} anos, O nadador pertence à categoria Juvenil A")
-if idade >= 14 and idade <= 17:
-    print(f"Com {idade} anos, O nadador pertence à categoria Juvenil B")
-if idade > 17:
-    print(f"Com {idade} anos, O nadador pertence à categoria Senior")
+if idade < 5:
+    print("Idade inválida para a competição")
+if(idade >= 5 and idade < 8):
+    print("Infantil A")
+if(idade >= 8 and idade < 11):
+    print("Infantil B")
+if(idade >= 11 and idade < 14):
+    print("Juvenil A")
+if(idade >= 14 and idade < 18):
+    print("Juvenil B")
+if(idade >= 18 ):
+    print("Senior")
